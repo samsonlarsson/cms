@@ -1,0 +1,165 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:minWidth="280dp"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minWidth="320dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+            android:id="@+id/txt_Title"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_horizontal|center_vertical"
+            android:scaleType="center"
+            android:text="Product"
+            android:textSize="26sp" />
+
+        <com.android.volley.toolbox.NetworkImageView
+
+            android:id="@+id/img_produce"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/hourglass" />
+
+        <!--<ke.co.greencredit.nunua.Fonts.RobotoLight-->
+            <!--android:id="@+id/txt_produce_name"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text=""-->
+            <!--android:textSize="22sp" />-->
+
+        <ke.co.greencredit.nunua.Fonts.RobotoLight
+            android:id="@+id/txt_produce_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textSize="20sp" />
+
+        <!--<ke.co.greencredit.nunua.Fonts.RobotoLight-->
+            <!--android:id="@+id/txt_quantity"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="Quantity"-->
+            <!--android:textSize="20sp" />-->
+
+        <!--<ke.co.greencredit.nunua.Fonts.RobotoLight-->
+            <!--android:id="@+id/txt_quantity_number"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:text="1"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:textSize="20sp" />-->
+
+        <LinearLayout
+            android:id="@+id/quantityCtrl"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/product_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_weight="1"
+                android:textSize="35sp"
+                android:textColor="@color/text_grey"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/rectangle_frame"
+                android:id="@+id/btnSub"
+                android:gravity="center_horizontal|center_vertical" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:text="0"
+                android:gravity="center_horizontal|center_vertical"
+                android:id="@+id/txtQuantity"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_weight="1"
+                android:textSize="35sp"
+                android:textColor="@color/text_grey"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/rectangle_frame"
+                android:id="@+id/btnAdd"
+                android:gravity="center_horizontal|center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/operations"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/product_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REMOVE"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="2.5dp"
+                android:background="@color/yellow"
+                android:id="@+id/btnRemove"
+                android:layout_gravity="center_horizontal|center_vertical" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DONE"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="2.5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@color/insta_green"
+                android:id="@+id/btnDone"
+                android:gravity="center_horizontal|center_vertical" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

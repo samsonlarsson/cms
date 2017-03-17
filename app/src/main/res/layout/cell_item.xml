@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/rectangle_frame_white"
+    android:minHeight="175dp"
+    android:orientation="vertical">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imgItem"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/shopping_cart" />
+
+    <ke.co.greencredit.nunua.Fonts.RobotoMedium
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:gravity="left"
+        android:text="Ksh 0.00"
+
+        android:textColor="@color/dim_black"
+        android:textSize="14dp" />
+
+
+    <ke.co.greencredit.nunua.Fonts.RobotoRegular
+        android:id="@+id/txtItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:gravity="left"
+        android:text="Produce"
+        android:textColor="@color/dim_black"
+        android:textSize="12dp" />
+
+    <ke.co.greencredit.nunua.Fonts.RobotoRegular
+        android:id="@+id/txtQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="8dp"
+        android:text="Per 0.5 kg"
+        android:textColor="@color/text_grey"
+        android:textSize="11dp" />
+
+</LinearLayout>

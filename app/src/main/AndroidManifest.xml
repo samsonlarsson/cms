@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ke.co.greencredit.nunua">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.nfc" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LogIn"
+            android:label="@string/title_activity_log_in"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Home.Main"
+            android:label="@string/title_activity_main"
+            android:parentActivityName=".LogIn">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.LogIn" />
+        </activity>
+        <activity
+            android:name=".StoreNavigation.StoreListing"
+            android:label="@string/title_activity_store_listing"
+            android:parentActivityName=".Home.Main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Home.Main" />
+        </activity>
+        <activity
+            android:name=".StoreNavigation.StoreDepartment"
+            android:label="@string/title_activity_store_department"
+            android:parentActivityName=".Home.Main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Home.Main" />
+        </activity>
+        <activity
+            android:name=".CurrentStore.StorePage"
+            android:label="@string/title_activity_store_page"
+            android:parentActivityName=".Home.Main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Home.Main" />
+        </activity>
+        <activity
+            android:name=".Home.Search"
+            android:label="@string/title_activity_search" />
+        <activity
+            android:name=".Product.ProductView"
+            android:label="@string/title_activity_product_view" />
+        <activity
+            android:name=".Checkout.CashOnDelivery"
+            android:label="@string/title_activity_checkout"
+            android:parentActivityName=".Checkout.Checkout">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Cart.Cart" />
+        </activity>
+        <activity
+            android:name=".Cart.Cart"
+            android:label="@string/title_activity_cart"
+            android:parentActivityName=".Home.Main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Home.Main" />
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:label="@string/title_activity_registration"
+            android:parentActivityName=".LogIn">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.LogIn" />
+        </activity>
+        <activity
+            android:name=".RegistrationStepTwo"
+            android:label="@string/title_activity_registration_step_two"
+            android:parentActivityName=".Registration">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Registration" />
+        </activity>
+        <activity
+            android:name=".RegistrationStepThree"
+            android:label="@string/title_activity_registration_step_three"
+            android:parentActivityName=".RegistrationStepTwo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.RegistrationStepTwo" />
+        </activity>
+        <activity
+            android:name=".RegistrationStepFour"
+            android:label="@string/title_activity_registration_step_four"
+            android:parentActivityName=".RegistrationStepThree">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.RegistrationStepThree" />
+        </activity>
+        <activity
+            android:name=".RegistrationDone"
+            android:label="@string/title_activity_registration_done"
+            android:parentActivityName=".RegistrationStepFour">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.RegistrationStepFour" />
+        </activity>
+        <activity
+            android:name=".ChildRegistration"
+            android:label="@string/title_activity_child_registration"
+            android:parentActivityName=".RegistrationStepFour">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.RegistrationStepFour" />
+        </activity>
+        <activity
+            android:name=".Delivery.Delivery"
+            android:label="@string/title_activity_delivery"
+            android:parentActivityName=".Home.Main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Home.Main" />
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".Home.Main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Home.Main" />
+        </activity>
+        <activity
+            android:name=".History.History"
+            android:label="@string/title_activity_history"
+            android:parentActivityName=".Home.Main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Home.Main" />
+        </activity>
+        <activity
+            android:name=".Checkout.Checkout"
+            android:label="@string/title_activity_checkout"
+            android:parentActivityName=".Cart.Cart">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Cart.Cart" />
+        </activity>
+        <activity
+            android:name=".Checkout.PayMpesa"
+            android:label="@string/title_activity_pay_mpesa"
+            android:parentActivityName=".Checkout.Checkout">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Checkout.Checkout" />
+        </activity>
+        <activity
+            android:name=".Loyalty.Loyalty"
+            android:label="@string/title_activity_loyalty"
+            android:parentActivityName=".Home.Main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Home.Main" />
+        </activity>
+        <activity
+            android:name=".Redeem"
+            android:label="@string/title_activity_redeem"
+            android:parentActivityName=".Loyalty.Loyalty">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Loyalty.Loyalty" />
+        </activity>
+        <activity
+            android:name=".DepartmentView.DepartmentView"
+            android:label="@string/title_activity_store_view"
+            android:parentActivityName=".Home.Main"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Home.Main" />
+        </activity>
+        <activity
+            android:name=".Departments.DepartmentActivity"
+            android:label="@string/title_activity_department"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.greencredit.nunua.Home.Main" />
+        </activity>
+    </application>
+
+</manifest>

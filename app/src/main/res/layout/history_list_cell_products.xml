@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <ke.co.greencredit.nunua.Fonts.RobotoRegular
+        android:id="@+id/historyListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.8"
+        android:text="Product Name"
+        android:textColor="@color/dim_gray"
+        android:textSize="17sp" />
+
+    <ke.co.greencredit.nunua.Fonts.RobotoLight
+        android:id="@+id/historyListQuantity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Quantity"
+        android:layout_weight="1.15"
+        android:textColor="@color/dim_gray"
+        android:textSize="16sp" />
+
+    <ke.co.greencredit.nunua.Fonts.RobotoLight
+        android:id="@+id/historyListCost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:text="Cost"
+        android:textColor="@color/dim_gray"
+        android:textSize="16sp" />
+</LinearLayout>

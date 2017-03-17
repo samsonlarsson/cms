@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Nunua</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_log_in">Log In</string>
+    <string name="title_activity_home">Home</string>
+
+    //Navigation drawer toggle
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_store_listing">StoreListing</string>
+    <string name="title_activity_store_department">StoreDepartment</string>
+    <string name="title_activity_store_page">StorePage</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_product_view">ProductView</string>
+    <string name="title_activity_checkout">Checkout</string>
+    <string name="title_activity_cart">Cart</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_registration_step_two">RegistrationStepTwo</string>
+    <string name="title_activity_registration_step_three">RegistrationStepThree</string>
+    <string name="title_activity_registration_step_four">RegistrationStepFour</string>
+    <string name="title_activity_registration_done">RegistrationDone</string>
+    <string name="title_activity_cart_view">CartView</string>
+    <string name="title_activity_child_registration">ChildRegistration</string>
+    <string name="title_activity_delivery">Delivery</string>
+    <string name="title_activity_about">about</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_pay_mpesa">PayMpesa</string>
+    <string name="title_activity_loyalty">Loyalty</string>
+    <string name="title_activity_redeem">Redeem</string>
+    <string name="title_activity_search_item">SearchItem</string>
+    <string name="popular">Popular</string>
+    <string name="stores">Stores</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_store_view">StoreView</string>
+    <string name="title_activity_department">Department</string>
+
+</resources>

@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    tools:context="ke.co.greencredit.nunua.RegistrationStepTwo">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/basic_app_bar" />
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="4dip"
+        android:layout_below="@id/app_bar"
+        android:background="@drawable/gradient" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/shadow">
+
+        <LinearLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/app_bar"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="REGISTRATION"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hr"
+                android:orientation="horizontal" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txtMaritalStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Marital status"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="true"
+                    android:text="Married" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Single" />
+
+            </RadioGroup>
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txtNoKids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Child Status"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnAddChild"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/dark_light"
+                android:text="Add Child"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/insta_green"
+                android:text="DONE"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

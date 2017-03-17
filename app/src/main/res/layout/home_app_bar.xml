@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/dark_light">
+
+    <ke.co.greencredit.nunua.Fonts.RobotoRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Nunua"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic_cart"
+            android:scaleType="fitXY"
+            android:padding="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/cart" />
+
+        <TextView
+            android:id="@+id/cart_counter"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/badge_icon"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="0"
+            android:textSize="10sp"
+            android:layout_marginLeft="0dp"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ic_search"
+        android:scaleType="fitXY"
+        android:padding="8dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/ic_search" />
+
+</android.support.v7.widget.Toolbar>

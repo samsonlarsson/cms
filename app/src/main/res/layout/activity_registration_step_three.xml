@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ke.co.greencredit.nunua.RegistrationStepTwo">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/basic_app_bar" />
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="4dip"
+        android:layout_below="@id/app_bar"
+        android:background="@drawable/gradient" />
+
+    <ScrollView
+
+        android:layout_below="@id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="REGISTRATION"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hr"
+                android:orientation="horizontal" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editLocation"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Location"
+                android:inputType="text"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editPostal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Postal Address"
+                android:inputType="text"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editCode"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Code"
+                android:inputType="number"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editTown"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Town or City"
+                android:inputType="text"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editTel1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Phone Number 1"
+                android:inputType="phone"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editTel2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Phone Number 2"
+                android:inputType="phone"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" />
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/insta_green"
+                android:text="PROCEED"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

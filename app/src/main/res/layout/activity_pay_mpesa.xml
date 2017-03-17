@@ -1,0 +1,407 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    tools:context="ke.co.greencredit.nunua.Checkout.PayMpesa">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/basic_app_bar" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/details_panel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txt_subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Total amount payable:"
+                android:textSize="17sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RalewaySemiBold
+                android:id="@+id/subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="Ksh. 5000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="4dip"
+            android:layout_below="@id/details_panel"
+            android:background="@drawable/gradient" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/card"
+                    android:orientation="vertical">
+
+                    <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="PAYMENT DETAILS"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ke.co.greencredit.nunua.Fonts.RobotoRegular-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="MPESA Till No."-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textSize="18sp" />-->
+
+                    <!--<ke.co.greencredit.nunua.Fonts.RobotoRegular-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="57XXX2"-->
+                    <!--android:textColor="@color/text_grey"-->
+                    <!--android:textSize="17sp" />-->
+                    <!--</LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Payment Instructions"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Step 1:"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Go to M-pesa on your phone"
+                            android:textColor="@color/text_grey"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Step 2:"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Select Lipa na M-pesa in the drop-down"
+                            android:textColor="@color/text_grey"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                            android:layout_width="38dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Step 3:"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Select Buy Goods and Services"
+                            android:textColor="@color/text_grey"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Step 4:"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Enter the till number 5XXXX2"
+                            android:textColor="@color/text_grey"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Step 5:"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Enter the amount payable (Stated above)"
+                            android:textColor="@color/text_grey"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/hr"/>
+
+                    <ke.co.greencredit.nunua.Fonts.RobotoLight
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="Please use the phone number that you provided during registration:"
+                        android:textColor="@color/text_grey"
+                        android:textSize="17sp" />
+
+                    <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="07XXXXXX18"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Location"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="Registered location"
+                            android:textColor="@color/text_grey"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Delivery Location"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <ke.co.greencredit.nunua.Fonts.RobotoLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="*Provide an alternate location if need be"
+                        android:textSize="16sp" />
+
+                    <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                        android:id="@+id/edit_location"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingLeft="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rectangle_border"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:hint="Location"
+                        android:textSize="17sp" />
+
+                    <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Delivery Time"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                        android:id="@+id/edit_time"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rectangle_border"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:inputType="time"
+                        android:gravity="center_horizontal"
+                        android:hint="Time"
+                        android:textSize="17sp" />
+
+                    <Button
+                        android:id="@+id/btnProceed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/insta_green"
+                        android:text="PROCEED"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

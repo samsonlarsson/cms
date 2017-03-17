@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    tools:context="ke.co.greencredit.nunua.Checkout.Checkout">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/basic_app_bar" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/details_panel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txt_subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Total amount payable:"
+                android:textSize="17sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RalewaySemiBold
+                android:id="@+id/subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="Ksh. "
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="4dip"
+            android:layout_below="@id/details_panel"
+            android:background="@drawable/gradient" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ke.co.greencredit.nunua.Fonts.RalewayRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="PAYMENT OPTIONS"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/card"
+                    android:orientation="vertical">
+
+                    <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="CASH ON DELIVERY"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:text="Only pay once your ordered goods arrived at a set destination and verified."
+                            android:textColor="@color/text_grey"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnProceedCash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/insta_green"
+                        android:text="PROCEED"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/card"
+                    android:orientation="vertical">
+
+                    <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="LIPA NA MPESA"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:text="Conveniently pay via Mpesa and have your goods delivered with no hassles."
+                            android:textColor="@color/text_grey"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnProceedMpesa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/insta_green"
+                        android:text="PROCEED"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

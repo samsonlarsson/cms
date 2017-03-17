@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ke.co.greencredit.nunua.Fonts.RalewaySemiBold
+            android:id="@+id/txt_cart"
+            android:text="Your Cart"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back"
+            android:layout_width="22dp"
+            android:layout_height="22dp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

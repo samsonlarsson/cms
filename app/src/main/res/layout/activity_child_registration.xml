@@ -1,0 +1,168 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ke.co.greencredit.nunua.RegistrationStepTwo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/basic_app_bar" />
+
+        <LinearLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/app_bar"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/nunua_logo" />
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal"
+                android:background="@drawable/hr"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txtChildName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Child's Name"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingTop="15dp" />
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Gender"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40px">
+                <RadioButton
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Male"
+                    android:checked="true"
+                    android:id="@+id/radioButton" />
+
+                <RadioButton
+                    android:layout_width="300dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/radioButton2" />
+            </RadioGroup>
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txtInst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="School"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editSchool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Name of school"
+                android:inputType="text"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingTop="15dp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="YOB"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Year Of Birth"
+                android:inputType="text"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingTop="15dp" />
+
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="ADD CHILD"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/yellow"
+                android:id="@+id/btnAdd"
+                android:layout_gravity="center_horizontal" />
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/insta_green"
+                android:text="DONE"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

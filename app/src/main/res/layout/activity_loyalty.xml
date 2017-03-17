@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ke.co.greencredit.nunua.Loyalty.Loyalty">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/basic_app_bar" />
+
+    <LinearLayout
+        android:id="@+id/details_panel"
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/background_gray"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+            android:id="@+id/txt_subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/dim_black"
+            android:text="Available Points:"
+            android:textSize="17sp" />
+
+        <ke.co.greencredit.nunua.Fonts.RobotoMedium
+            android:id="@+id/subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/dim_black"
+            android:gravity="center_vertical|right"
+            android:text="0.00"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:layout_below="@id/details_panel"
+        android:background="@drawable/gradient" />
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/shadow"
+        android:layout_marginBottom="55dp"
+        android:layout_centerHorizontal="true">
+
+        <ListView
+            android:id="@+id/list_points"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/red"
+            android:textColor="@android:color/white"
+            android:text="REDEEM"
+            android:id="@+id/btnRedeem"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

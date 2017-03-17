@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    tools:context="ke.co.greencredit.nunua.Cart.Cart">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/basic_app_bar" />
+
+    <LinearLayout
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/details_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/background_gray"
+            android:padding="16dp">
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txt_subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Subtotal:"
+                android:textColor="@color/dim_black"
+                android:textSize="17sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoMedium
+                android:id="@+id/subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="Ksh. 0.00"
+                android:textColor="@color/dim_black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="4dip"
+        android:layout_below="@id/details_panel"
+        android:background="@drawable/gradient" />
+
+    <ListView
+        android:id="@+id/cartItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/shadow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="55dp"
+        android:divider="@android:color/transparent"
+        android:layout_marginRight="2dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/red"
+        android:textColor="@android:color/white"
+        android:text="CHECKOUT"
+        android:id="@+id/btnCheckOut"
+        android:textSize="18sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

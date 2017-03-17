@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dim_gray"
+
+    android:orientation="horizontal">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/deptImg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <ke.co.greencredit.nunua.Fonts.RobotoMedium
+        android:id="@+id/dptName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal"
+        android:text="Large Text"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

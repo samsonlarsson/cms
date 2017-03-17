@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginTop="2dp"
+    android:background="@color/gray_bleach"
+
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ke.co.greencredit.nunua.Fonts.RobotoMedium
+                android:id="@+id/tvStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="Nunua Store"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/dirty_grey"
+                android:textSize="20sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="VIEW MORE"
+                android:textColor="@color/yellow"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:textSize="13dp"
+                android:background="@drawable/rectangle_frame_red"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btnViewMore" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/popular_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+</LinearLayout>

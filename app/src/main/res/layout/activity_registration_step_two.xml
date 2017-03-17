@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ke.co.greencredit.nunua.RegistrationStepTwo">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/basic_app_bar" />
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="4dip"
+        android:layout_below="@id/app_bar"
+        android:background="@drawable/gradient" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/shadow">
+
+        <LinearLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:src="@drawable/nunua_logo" />-->
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="REGISTRATION"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hr"
+                android:orientation="horizontal" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editFullName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editIdNo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Id No"
+                android:inputType="text"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editEmail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editPass"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoLightEdit
+                android:id="@+id/editConfPass"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rectangle_border"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" />
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/insta_green"
+                android:text="PROCEED"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

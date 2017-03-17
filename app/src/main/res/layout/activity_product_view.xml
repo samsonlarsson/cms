@@ -1,0 +1,157 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ke.co.greencredit.nunua.StoreNavigation.StoreListing">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:id="@+id/cancel_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ke.co.greencredit.nunua.Fonts.RobotoLight
+                android:id="@+id/txt_cancel"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="X"
+                android:textColor="@color/dim_black"
+                android:textSize="34sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txt_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="PRODUCT"
+                android:textColor="@color/dim_black"
+                android:textSize="23sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/search_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_header"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/img_product"
+                android:layout_width="90pt"
+                android:layout_height="90pt"
+                android:src="@mipmap/shopping_cart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/product_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_box"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txtProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textColor="@color/dim_black"
+                android:textSize="22sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoMedium
+                android:id="@+id/txtProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ksh. 500"
+                android:textColor="@color/dim_black"
+                android:textSize="18sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txtProductUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="3.05 lbs"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quantityCtrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegButton
+                android:id="@+id/btnSub"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_frame"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="-"
+                android:textColor="@color/dim_black"
+                android:textSize="35sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:id="@+id/txtQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="0"
+                android:textColor="@color/dim_black"
+                android:textSize="30sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegButton
+                android:id="@+id/btnAdd"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_frame"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="+"
+                android:textColor="@color/dim_black"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/insta_green"
+        android:text="Add to cart"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

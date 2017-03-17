@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ke.co.greencredit.nunua.CurrentStore.StorePage">
+
+    <RelativeLayout
+        android:id="@+id/graphic_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/graphic_img"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="150dp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/left"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/subBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/graphic_container"
+        android:background="@color/dark_light"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/curStore_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ke.co.greencredit.nunua.Fonts.RalewaySemiBold
+                android:id="@+id/txtStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="CURRENT STORE"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RalewaySemiBold
+                android:id="@+id/txtCurStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Current Store"
+                android:textColor="@color/firey_orange"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/curDeptContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ke.co.greencredit.nunua.Fonts.RalewaySemiBold
+                android:id="@+id/txtDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="DEPARTMENT"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+
+            <ke.co.greencredit.nunua.Fonts.RalewaySemiBold
+                android:id="@+id/txtCurDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Current Department"
+                android:textColor="@color/firey_orange"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ke.co.greencredit.nunua.Fonts.RalewaySemiBold
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Current Department"
+        android:id="@+id/txtDept"
+        android:layout_below="@+id/subBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <GridView
+        android:id="@+id/products_grid"
+        android:layout_below="@id/txtDept"
+        android:background="@color/text_grey"
+        android:layout_width="match_parent"
+        android:layout_height="362.5dp"
+        android:columnWidth="90dp"
+        android:verticalSpacing="0.5dp"
+        android:horizontalSpacing="0.5dp"
+        android:layout_marginTop="20dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="auto_fit" />
+
+
+</RelativeLayout>

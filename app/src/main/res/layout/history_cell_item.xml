@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+            android:id="@+id/lblHistoryCartID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.8"
+            android:text="Product Name"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <ke.co.greencredit.nunua.Fonts.RobotoLight
+            android:id="@+id/historyCartID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/dim_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+            android:id="@+id/lblHistoryOrderID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.8"
+            android:text="Order ID"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <ke.co.greencredit.nunua.Fonts.RobotoLight
+            android:id="@+id/historyOrderID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/dim_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+            android:id="@+id/lblHistoryOrderStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.8"
+            android:text="Order Status"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <ke.co.greencredit.nunua.Fonts.RobotoLight
+            android:id="@+id/historyOrderStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/dim_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+            android:id="@+id/lblHistoryTotalAmount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.8"
+            android:text="Total Amount"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <ke.co.greencredit.nunua.Fonts.RobotoLight
+            android:id="@+id/historyTotalAmount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/dim_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+            android:id="@+id/lblHistoryPendingAmount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.8"
+            android:text="Pending Amount"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <ke.co.greencredit.nunua.Fonts.RobotoLight
+            android:id="@+id/historyPendingAmount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/dim_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

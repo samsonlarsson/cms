@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/card"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pImage"
+            android:src="@drawable/hourglass"
+            android:layout_width="72dp"
+            android:layout_height="72dp" />
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ke.co.greencredit.nunua.Fonts.RalewaySemiBold
+                android:id="@+id/product_name"
+                android:text="Product Name"
+                android:textSize="20sp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/text_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                    android:id="@+id/price"
+                    android:text="Ksh. 500"
+                    android:textSize="16sp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/text_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ke.co.greencredit.nunua.Fonts.RalewaySemiBold
+                    android:id="@+id/slash"
+                    android:text="/"
+                    android:textSize="16sp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/text_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                    android:id="@+id/quantity"
+                    android:text="Kg"
+                    android:textSize="16sp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/text_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

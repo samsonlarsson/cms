@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_gray"
+    tools:context="ke.co.greencredit.nunua.About">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/basic_app_bar"/>
+
+    <ScrollView
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@drawable/nunua_logo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/img_logo"
+                android:layout_gravity="center_horizontal" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:textSize="18sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="Developer: GREEN CREDIT"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Version Info: Version 1.0"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Website: www.greencredit.co.ke"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ke.co.greencredit.nunua.Fonts.RobotoRegular
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:text="Email: info@greencredit.co.ke"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

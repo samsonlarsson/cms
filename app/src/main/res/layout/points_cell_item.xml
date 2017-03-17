@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ke.co.greencredit.nunua.Fonts.RalewaysLight
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="12th Nov"
+        android:textColor="@color/text_grey"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <ke.co.greencredit.nunua.Fonts.RobotoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/text_grey"
+            android:text="Points:"
+            android:textSize="22sp" />
+
+        <ke.co.greencredit.nunua.Fonts.RalewayRegular
+            android:id="@+id/txtPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,000"
+            android:textColor="@color/text_grey"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
